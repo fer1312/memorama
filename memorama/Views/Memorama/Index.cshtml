@@ -1,0 +1,12 @@
+﻿@model Memorama.Models.MemoramaModel
+
+<h2>Memorama</h2>
+<div style="display:grid; grid-template-columns:repeat(4, 100px); gap:10px;">
+    @foreach (var carta in Model.Cartas)
+    {
+        <div style="width:100px; height:100px; background:#ccc; font-size:2em; display:flex; align-items:center; justify-content:center;">
+            @carta.Imagen
+        </div>
+    }
+</div>
+
